@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Если URI не начинается с /basic/web/, то внутренне перенаправляем запрос в эту папку
+RewriteCond %{REQUEST_URI} !^/basic/web/
+RewriteRule ^(.*)$ /basic/web/$1 [L]

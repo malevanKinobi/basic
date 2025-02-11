@@ -12,6 +12,7 @@ use yii\filters\AccessControl;
 class HomeController extends Controller
 {
     public $layout = 'default';
+    
 
     public function behaviors()
     {
